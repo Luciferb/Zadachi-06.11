@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	char n;
+	cout<<"Vuvedete simvol"<<endl;
+	cin>>n;
+	if(n>='a' && n<='z')
+	{
+		cout<<"lower-case letter"<<endl;
+	}
+	else
+		if(n>='A' && n<='Z')
+		{
+			cout<<"upper-case letter"<<endl;
+		}
+		else
+			if(n>='0' && n<='9')				
+			{
+				cout<<"number"<<endl;
+			}
+			else
+				cout<<"other symbol"<<endl;
+	system("pause>nul");
+	return 0;
+}
