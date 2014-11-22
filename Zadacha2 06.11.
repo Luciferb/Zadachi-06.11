@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n,j;
+	bool t=true;
+	cout<<"Vuvedete chisloto si."<<endl;
+	cin>>n;
+	if(n==1)
+		t=false;
+	for(j=2;j<=n/2;j++)
+	{
+		if(n%j==0)
+			t=false;
+	}
+	if(t==0)
+		cout<<"False";
+	else
+		cout<<"True";
+	system("pause>nul");
+	return 0;
+}
