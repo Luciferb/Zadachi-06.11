@@ -2,16 +2,17 @@
 using namespace std;
 int main()
 {
-	const int n=2194;
-	int a,b,c,d;
+	int n,a,b,c,d;
+	cout<<"Vuvedete edno chetiricifreno chislo."<<endl;
+	cin>>n;
 	a=n/1000;
-	b=n/100%10;
+	b=(n/100)%10;
 	c=(n/10)%10;
 	d=n%10;
-	cout<<"a="<<a<<endl;
-	cout<<"b="<<b<<endl;
-	cout<<"c="<<c<<endl;
-	cout<<"d="<<d<<endl;
+	cout<<a<<endl;
+	cout<<b<<endl;
+	cout<<c<<endl;
+	cout<<d<<endl;
 	system("pause>nul");
 	return 0;
 }
