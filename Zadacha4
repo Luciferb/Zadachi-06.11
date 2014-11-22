@@ -1,0 +1,43 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a,g;
+cout<<"Vuvedete broq na cifrite na chisloto vi."<<endl;
+cout<<"Ako chisloto vi e s 1 cifra, vuvedete 1."<<endl;
+cout<<"Ako chisloto vi e s 2 cifri, vuvedete 2."<<endl;
+cout<<"Ako chisloto vi e s 3 cifri, vuvedete 3."<<endl;
+cout<<"Ako chisloto vi e s 4 cifri, vuvedete 4."<<endl;
+cout<<"Ako chisloto vi e s 5 cifri, vuvedete 5."<<endl;
+cout<<"Ako chisloto vi e s 6 cifri, vuvedete 6."<<endl;
+cout<<"Ako chisloto vi e s 7 cifri, vuvedete 7."<<endl;
+cout<<"Ako chisloto vi e s 8 cifri, vuvedete 8."<<endl;
+cout<<"Ako chisloto vi e s 9 cifri, vuvedete 9."<<endl;
+cin>>g;
+cout<<"Vuvedete chisloto si. "<<endl;
+cin>>a;
+
+	switch(g)
+	{
+	case 1: cout<<a<<endl;
+	break;
+	case 2: cout<<a/10<<endl<<a%10<<endl;
+	break;
+	case 3: cout<<a/100<<endl<<(a/10)%10<<endl<<a%10<<endl;
+	break;
+	case 4: cout<<a/1000<<endl<<(a/100)%10<<endl<<(a/10)%10<<endl<<a%10<<endl;
+	break;
+	case 5: cout<<a/10000<<endl<<(a/1000)%10<<endl<<(a/100)%10<<endl<<(a/10)%10<<endl<<a%10<<endl;
+	break;
+	case 6: cout<<a/100000<<endl<<(a/10000)%10<<endl<<(a/1000)%10<<endl<<(a/100)%10<<endl<<(a/10)%10<<endl<<a%10<<endl;
+	break;
+	case 7: cout<<a/1000000<<endl<<(a/100000)%10<<endl<<(a/10000)%10<<endl<<(a/1000)%10<<endl<<(a/100)%10<<endl<<(a/10)%10<<endl<<a%10<<endl;
+	break;
+	case 8: cout<<a/10000000<<endl<<(a/1000000)%10<<endl<<(a/100000)%10<<endl<<(a/10000)%10<<endl<<(a/10000)%10<<endl<<(a/1000)%10<<endl<<(a/100)%10<<endl<<(a/10)%10<<endl<<a%10<<endl;
+	break;
+	case 9: cout<<a/100000000<<endl<<(a/10000000)%10<<endl<<(a/1000000)%10<<endl<<(a/100000)%10<<endl<<(a/10000)%10<<endl<<(a/10000)%10<<endl<<(a/1000)%10<<endl<<(a/100)%10<<endl<<(a/10)%10<<endl<<a%10<<endl;
+	break;
+	}
+	system("pause>nul");
+return 0;
+}
